@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --main-color: rgb(255, 255, 255);
+  --purple: #6929c4;
+  --marin: hsl(188, 66%, 47%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  justify-content: center;
+  background: url(./images/macos-monterey-stock-black-dark-mode-layers-5k-6016x6016-5889.jpg);
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 108px);
+}
+nav {
+  position: sticky;
+  top: 2rem;
+  padding: 1rem 3rem;
+  display: flex;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: stretch;
+  gap: 3rem;
+  min-width: 90%;
+  justify-content: center;
+  border-radius: 75px;
+  z-index: 50;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 1 0px;
+  max-width: 250px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: all 0.25s ease-in;
+  background: var(--purple);
+  border-radius: 25px;
+  padding: 0 0.525rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+.fara-color {
+  background: none;
+}
+.logo {
+  object-fit: contain;
+  height: 60px;
+  width: 60px;
+  background: none;
+  padding: 0.125rem;
+}
+nav a:hover,
+nav a:focus {
+  background: white;
+  color: var(--purple);
+}
+.general {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 4rem;
+}
+.general-title {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+.pop {
+  color: var(--purple);
+}
+.cancer {
+  object-fit: contain;
+  width: min(400px, 25vw);
+  border-radius: 50%;
+  border: 2px solid var(--purple);
+}
+.big-bang {
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.big-bang .big-bang-info,
+.big-bang-card {
+  flex: 1 1 0px;
+  max-width: 500px;
+}
+.big-bang-info h2 {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  padding-bottom: 1rem;
+}
+.big-bang-info .q {
+  color: #ffffff;
+  font-size: clamp(1.2rem, 2vw, 2.25rem);
+  font-weight: 500;
+  padding-top: 0.75rem;
+}
+.big-bang-info .r {
+  padding-top: 1rem;
+  display: block;
+  color: #ffffff;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: 400;
+}
+.big-bang-card p {
+  width: 100%;
+  color: #ffffff;
+  background: var(--purple);
+  padding: 2rem;
+  line-height: 1.5em;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.big-bang-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+}
+.big-bang-card img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  object-fit: contain;
+  width: 100%;
+}
+.big-bang-card:hover {
+  transform: scale(1.2);
+}
+.big-bang-info {
+  padding-left: 1rem;
+  border-left: 2px solid #ffffff;
+}
